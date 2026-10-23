@@ -9,6 +9,17 @@
   <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
   <script>
     console.log("d3 version", d3.version); // test that d3 loaded
+
+    const svg = d3.select("#container")
+    .append("svg")
+    .attr("width", 500)
+    .attr("height", 400);
+      const fish = svg.append("g")
+        .attr("transform", "translate(100,00)");
+      fish.append("ellipse")
+        .attr("rx", 40).attr("ry",20)
+        .attr("fill", "orange");
+
     // Add an SVG
     // Add Rectangles
     // Add Circles
